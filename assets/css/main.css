@@ -1,0 +1,7 @@
+/* Importación de hojas de estilo */
+
+@import url("./global.css");
+@import url("./nav.css");
+@import url("./banners.css");
+@import url("./cards.css");
+@import url("./footers.css");
