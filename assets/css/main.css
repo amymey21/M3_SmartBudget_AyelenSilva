@@ -1,7 +1,49 @@
-/* Importación de hojas de estilo */
+/* Global styles */
+body {
+  font-family: "Noto Sans", sans-serif;
+  background-color: rgba(95, 201, 24, 0.9019607843);
+  line-height: 1.5;
+  color: rgba(56, 54, 54, 0.9843137255);
+}
 
-@import url("./global.css");
-@import url("./nav.css");
-@import url("./banners.css");
-@import url("./cards.css");
-@import url("./footers.css");
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Global Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.nav__logo img {
+  height: 80px;
+  width: auto;
+  display: block;
+}
+.nav__menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav__link {
+  color: #0d7c25;
+  font-weight: 500;
+}
+.nav__link:hover {
+  color: rgba(255, 238, 0, 0.8705882353);
+}
