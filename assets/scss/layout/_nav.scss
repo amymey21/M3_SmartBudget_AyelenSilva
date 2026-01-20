@@ -1,0 +1,27 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+
+  &__logo img {
+    height: 80px;
+    width: auto;
+    display: block;
+  }
+
+  &__menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  &__link {
+    color: #0d7c25;
+    font-weight: 500;
+  }
+
+  &__link:hover {
+    color: #ffee00de;
+  }
+}

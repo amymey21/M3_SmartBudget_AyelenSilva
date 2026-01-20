@@ -1,0 +1,23 @@
+// Manifest File
+
+// abstract
+@use './abstracts/variables';
+
+// Vendors
+
+// base
+@use './base/globalStyles';
+@use './base/reset';
+
+// layout
+@use './layout/footers';
+@use './layout/nav';
+
+// Components
+@use './components/banners';
+@use './components/cards';
+
+// pages
+
+// themes
+
