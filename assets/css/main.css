@@ -1,15 +1,13 @@
 /* Global styles */
 body {
   font-family: "Noto Sans", sans-serif;
-  background-color: rgba(95, 201, 24, 0.9019607843);
+  background-color: rgba(105, 173, 59, 0.9019607843);
   line-height: 1.5;
   color: rgba(56, 54, 54, 0.9843137255);
 }
 
 img {
   max-width: 100%;
-  height: auto;
-  display: block;
 }
 
 /* Global Reset*/
@@ -28,22 +26,44 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  background-color: rgba(200, 233, 147, 0.63);
 }
 .nav__logo img {
-  height: 80px;
-  width: auto;
-  display: block;
+  height: 35%;
+  width: 35%;
 }
 .nav__menu {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
 }
-.nav__link {
-  color: #0d7c25;
-  font-weight: 500;
+@media (max-width: 768px) {
+  .nav__menu {
+    display: none;
+  }
 }
-.nav__link:hover {
-  color: rgba(255, 238, 0, 0.8705882353);
+.nav__item a {
+  color: #333;
+}
+.nav__toggle {
+  display: none;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .nav__toggle {
+    display: inline;
+  }
+}
+.nav__toggle__icon {
+  width: 50px;
+  height: 6px;
+  background-color: #ffffff;
+}
+.nav__toggle--active__menu {
+  display: flex;
+  flex-direction: column;
 }
